@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>No to losers</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #222;
+      font-family: sans-serif;
+    }
+    #gameCanvas {
+      display: block;
+      background: #333;
+    }
+    #controls {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      background: #0af;
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      color: white;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="800" height="480"></canvas>
+  <div id="controls">
+    <button class="btn" onclick="moveLeft()">◀️</button>
+    <button class="btn" onclick="jump()">⬆️</button>
+    <button class="btn" onclick="moveRight()">▶️</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
